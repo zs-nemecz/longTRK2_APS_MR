@@ -1,1 +1,1 @@
-# longTRK_APS_MR
+# longTRK Study: APS Task - MR version
