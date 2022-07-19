@@ -29,7 +29,7 @@
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0.114,0.310,0.380]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
-    <Param name="expName" updates="None" val="miniTRK" valType="str"/>
+    <Param name="expName" updates="None" val="longTRK" valType="str"/>
     <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
     <Param name="logging level" updates="None" val="exp" valType="code"/>
   </Settings>
@@ -414,7 +414,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Vége az anatómiai mérésnek." valType="str"/>
+        <Param name="text" updates="constant" val="Remekül csinálta, köszönjük!&amp;#10;&amp;#10;Vége az anatómiai mérésnek." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="0.52" valType="code"/>
       </TextComponent>
@@ -441,8 +441,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="cprint(&quot;On Screen: \nV\u00e9ge az anat\u00f3miai m\u00e9r\u00e9snek.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Press SPACE to exit.&quot;, &quot;red&quot;);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="cprint('On Screen: \nVége az anatómiai mérésnek.',  'blue', 'on_white')&amp;#10;cprint('Press SPACE to exit.', 'red')" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="cprint(&quot;On Screen:\n Remek\u00fcl csin\u00e1lta, k\u00f6sz\u00f6nj\u00fck! \nV\u00e9ge az anat\u00f3miai m\u00e9r\u00e9snek.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Press SPACE to exit.&quot;, &quot;red&quot;);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="cprint('On Screen:\n Remekül csinálta, köszönjük! \nVége az anatómiai mérésnek.',  'blue', 'on_white')&amp;#10;cprint('Press SPACE to exit.', 'red')" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>

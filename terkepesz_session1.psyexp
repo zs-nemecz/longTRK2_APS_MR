@@ -29,7 +29,7 @@
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="color" updates="None" val="$[0.114,0.310,0.380]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
-    <Param name="expName" updates="None" val="miniTRK" valType="str"/>
+    <Param name="expName" updates="None" val="longTRK" valType="str"/>
     <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
     <Param name="logging level" updates="None" val="exp" valType="code"/>
   </Settings>
@@ -315,7 +315,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
         <Param name="name" updates="None" val="rest_instructions_text" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -327,9 +327,9 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="300.0" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Most a nyugalmi mérés következik.&amp;#10;&amp;#10;A mérés közben egy fixációs keresztet lát majd a képernyőn.&amp;#10;&amp;#10;Nézze ezt a keresztet. Gondolatait hagyja kalandozni.&amp;#10;Kérjük, közben maradjon ébren. A nyugalmi mérés 8 percig tart.&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="text" updates="constant" val="Köszönjük, vége az anatómiai mérésnek.&amp;#10;&amp;#10;Most a nyugalmi mérés következik.&amp;#10;&amp;#10;A mérés közben egy fixációs keresztet lát majd a képernyőn.&amp;#10;&amp;#10;Nézze ezt a keresztet. Gondolatait hagyja kalandozni.&amp;#10;Kérjük, közben maradjon ébren. A nyugalmi mérés 8 percig tart.&amp;#10;&amp;#10;" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="1.1" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="rest_instructions_key">
         <Param name="allowedKeys" updates="constant" val="'d'" valType="code"/>
@@ -358,7 +358,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.03" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
         <Param name="name" updates="None" val="rest_instructions_continue" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -366,21 +366,21 @@
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="10.0" valType="code"/>
+        <Param name="startVal" updates="None" val="5.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="290.0" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Ha minden rendben nyomja le a gombot a jobb hüvelykujjával. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="0.9" valType="code"/>
       </TextComponent>
       <CodeComponent name="experimenter_message_resting_info">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="cprint(&quot;On Screen&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Most a nyugalmi m\u00e9r\u00e9s k\u00f6vetkezik.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;A m\u00e9r\u00e9s k\u00f6zben egy fix\u00e1ci\u00f3s keresztet l\u00e1t majd a k\u00e9perny\u0151n.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;N\u00e9zze ezt a keresztet. Gondolatait hagyja kalandozni.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;K\u00e9rj\u00fck, k\u00f6zben maradjon \u00e9bren. A nyugalmi m\u00e9r\u00e9s 8 percig tart.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Waiting for participant response...&quot;, &quot;yellow&quot;);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="cprint('On Screen', 'blue', 'on_white')&amp;#10;cprint('Most a nyugalmi mérés következik.', 'blue', 'on_white')&amp;#10;cprint('A mérés közben egy fixációs keresztet lát majd a képernyőn.', 'blue', 'on_white')&amp;#10;cprint('Nézze ezt a keresztet. Gondolatait hagyja kalandozni.',  'blue', 'on_white')&amp;#10;cprint('Kérjük, közben maradjon ébren. A nyugalmi mérés 8 percig tart.',  'blue', 'on_white')&amp;#10;cprint('Waiting for participant response...', 'yellow')&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="cprint(&quot;On Screen&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;K\u00f6sz\u00f6nj\u00fck, v\u00e9ge az anat\u00f3miai m\u00e9r\u00e9snek.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Most a nyugalmi m\u00e9r\u00e9s k\u00f6vetkezik.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;A m\u00e9r\u00e9s k\u00f6zben egy fix\u00e1ci\u00f3s keresztet l\u00e1t majd a k\u00e9perny\u0151n.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;N\u00e9zze ezt a keresztet. Gondolatait hagyja kalandozni.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;K\u00e9rj\u00fck, k\u00f6zben maradjon \u00e9bren. A nyugalmi m\u00e9r\u00e9s 8 percig tart.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Waiting for participant response...&quot;, &quot;yellow&quot;);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="cprint('On Screen', 'blue', 'on_white')&amp;#10;cprint('Köszönjük, vége az anatómiai mérésnek.', 'blue', 'on_white')&amp;#10;cprint('Most a nyugalmi mérés következik.', 'blue', 'on_white')&amp;#10;cprint('A mérés közben egy fixációs keresztet lát majd a képernyőn.', 'blue', 'on_white')&amp;#10;cprint('Nézze ezt a keresztet. Gondolatait hagyja kalandozni.',  'blue', 'on_white')&amp;#10;cprint('Kérjük, közben maradjon ébren. A nyugalmi mérés 8 percig tart.',  'blue', 'on_white')&amp;#10;cprint('Waiting for participant response...', 'yellow')&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -460,8 +460,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="cprint(&quot;On Screen: \nMessage on screen:\nMost a feladatok k\u00f6vetkeznek.Ha minden rendben, nyomja le a gombot a jobb h\u00fcvelykujj\u00e1val.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Waiting for participant response...&quot;, &quot;yellow&quot;);&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="cprint('On Screen: \nMessage on screen:\nMost a feladatok következnek.Ha minden rendben, nyomja le a gombot a jobb hüvelykujjával.',  'blue', 'on_white')&amp;#10;cprint('Waiting for participant response...', 'yellow')&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="cprint(&quot;On Screen: \nMessage on screen:\n Remek\u00fcl csin\u00e1lja, k\u00f6sz\u00f6nj\u00fck!&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;On Screen: \nMessage on screen:\nA feladatok k\u00f6vetkeznek.Ha minden rendben, nyomja le a gombot a jobb h\u00fcvelykujj\u00e1val.&quot;, &quot;blue&quot;, &quot;on_white&quot;);&amp;#10;cprint(&quot;Waiting for participant response...&quot;, &quot;yellow&quot;);&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="cprint('On Screen: \nMessage on screen:\n Remekül csinálja, köszönjük!',  'blue', 'on_white')&amp;#10;cprint('On Screen: \nMessage on screen:\nA feladatok következnek.Ha minden rendben, nyomja le a gombot a jobb hüvelykujjával.',  'blue', 'on_white')&amp;#10;cprint('Waiting for participant response...', 'yellow')&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -493,9 +493,9 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="300.0" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Most a feladatok következnek." valType="str"/>
+        <Param name="text" updates="constant" val="Remekül csinálja, köszönjük!&amp;#10;&amp;#10;Most a feladatok következnek." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="0.52" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="0.7" valType="code"/>
       </TextComponent>
       <KeyboardComponent name="prepare_task_key">
         <Param name="allowedKeys" updates="constant" val="'d'" valType="code"/>
@@ -538,7 +538,7 @@
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Ha minden rendben, nyomja le a gombot a jobb hüvelykujjával. " valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="0.52" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="0.8" valType="code"/>
       </TextComponent>
     </Routine>
     <Routine name="loading">

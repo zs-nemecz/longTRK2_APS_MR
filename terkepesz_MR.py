@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on July 19, 2022, at 11:49
+    on July 19, 2022, at 13:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -40,7 +40,7 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '2021.1.4'
-expName = 'miniTRK'  # from the Builder filename that created this script
+expName = 'longTRK'  # from the Builder filename that created this script
 expInfo = {'online ID': '', 'MR ID': '', 'Session': 'OBJ/LOC', 'Stimuli Table': '0'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
@@ -154,14 +154,14 @@ general_instructions_key = keyboard.Keyboard()
 general_instructions_4_continue = visual.TextStim(win=win, name='general_instructions_4_continue',
     text='A gyakorláshoz nyomja le a gombot a jobb hüvelykujjával. ',
     font='Arial',
-    pos=(0,-0.4), height=0.03, wrapWidth=None, ori=0, 
+    pos=(0,-0.4), height=0.05, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 general_instructions_text = visual.TextStim(win=win, name='general_instructions_text',
     text='',
     font='Arial',
-    pos=(0, -0.01), height=0.03, wrapWidth=None, ori=0, 
+    pos=(0, 0.015), height=0.05, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
@@ -395,7 +395,7 @@ end_practice_key = keyboard.Keyboard()
 end_practice_continue = visual.TextStim(win=win, name='end_practice_continue',
     text='A folytatáshoz nyomja le a gombot a jobb hüvelykujjával. ',
     font='Arial',
-    pos=(0,-0.4), height=0.03, wrapWidth=None, ori=0, 
+    pos=(0,-0.4), height=0.05, wrapWidth=None, ori=0, 
     color='black', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
@@ -2738,7 +2738,7 @@ for thisRun in run:
     # update component parameters for each repeat
     block_name = ''
     if TrialType=='OBJ':
-        block_name='Képválasztás'
+        block_name='Képválogatás'
     elif TrialType=='LOC':
         block_name='Helyválasztás'
     else:
@@ -3028,7 +3028,7 @@ for thisRun in run:
         # update component parameters for each repeat
         block_name = ''
         if TrialType=='OBJ':
-            block_name='Képválasztás'
+            block_name='Képválogatás'
         elif TrialType=='LOC':
             block_name='Helyválasztás'
         else:
